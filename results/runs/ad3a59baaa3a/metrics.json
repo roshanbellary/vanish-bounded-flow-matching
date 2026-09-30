@@ -1,0 +1,51 @@
+{
+  "run_id": "ad3a59baaa3a",
+  "status": "ok",
+  "tier": "full",
+  "seed": 1,
+  "git": "83b6236",
+  "config": {
+    "exp": "real_sequences",
+    "dataset": "dna_k4",
+    "k": 4,
+    "arm": "unconstrained",
+    "lam": 0.0,
+    "tier": "full",
+    "steps": 8000,
+    "n_train": 16351,
+    "n_eval": 4000,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "hidden": 128,
+    "layers": 8
+  },
+  "metrics": {
+    "10": {
+      "step_violation": 0.149125,
+      "x0_outside": 0.864325,
+      "marginal_kl": 0.006895077815497995,
+      "kmer_r": 0.9048802176367379
+    },
+    "50": {
+      "step_violation": 0.58482,
+      "x0_outside": 0.972685,
+      "marginal_kl": 0.006021721712396134,
+      "kmer_r": 0.9131876157925666
+    },
+    "100": {
+      "step_violation": 0.64938,
+      "x0_outside": 0.9787475,
+      "marginal_kl": 0.007064935843070634,
+      "kmer_r": 0.9013611114604761
+    }
+  },
+  "wall_seconds": 290.4,
+  "gpu_hours": 0.0,
+  "host": "MacBook-Pro-727.local",
+  "device": "mps",
+  "finished_at": "2026-09-21T02:35:37-0400",
+  "on_gpu": false
+}

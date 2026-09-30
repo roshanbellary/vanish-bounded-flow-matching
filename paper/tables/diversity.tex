@@ -1,0 +1,24 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{3}{c}{Pairwise Hamming (NFE 100)} & \multicolumn{3}{c}{Unique fraction} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Arm & DNA & Protein & Codon & DNA & Protein & Codon \\
+\midrule
+\emph{Held-out real} & 0.750 $\pm$ 0.000 & 0.940 $\pm$ 0.000 & 0.982 $\pm$ 0.000 & 1.00 & 1.00 & 1.00 \\
+\emph{Unigram (no model)} & 0.750 $\pm$ 0.000 & 0.941 $\pm$ 0.000 & 0.982 $\pm$ 0.000 & 1.00 & 1.00 & 1.00 \\
+\midrule
+Linear FM (base) & 0.747 $\pm$ 0.003 & 0.944 $\pm$ 0.001 & 0.980 $\pm$ 0.002 & 1.00 & 1.00 & 1.00 \\
+Ours $x\odot w$ & 0.748 $\pm$ 0.002 & 0.944 $\pm$ 0.001 & 0.982 $\pm$ 0.001 & 1.00 & 1.00 & 1.00 \\
+Center-only & 0.748 $\pm$ 0.003 & 0.943 $\pm$ 0.001 & 0.980 $\pm$ 0.003 & 1.00 & 1.00 & 1.00 \\
+Full replicator & 0.748 $\pm$ 0.001 & 0.944 $\pm$ 0.001 & 0.982 $\pm$ 0.001 & 1.00 & 1.00 & 1.00 \\
+Endpoint & 0.749 $\pm$ 0.000 & 0.588 $\pm$ 0.455 & 0.368 $\pm$ 0.475 & 1.00 & 0.63 & 0.38 \\
+Endpoint, reweighted & 0.749 $\pm$ 0.001 & 0.587 $\pm$ 0.454 & 0.245 $\pm$ 0.424 & 1.00 & 0.63 & 0.25 \\
+Dirichlet FM & 0.748 $\pm$ 0.002 & 0.939 $\pm$ 0.002 & 0.981 $\pm$ 0.001 & 1.00 & 1.00 & 1.00 \\
+Fisher-Flow & 0.748 $\pm$ 0.001 & 0.941 $\pm$ 0.002 & 0.981 $\pm$ 0.001 & 1.00 & 1.00 & 1.00 \\
+Gumbel-Softmax FM & 0.746 $\pm$ 0.003 & 0.878 $\pm$ 0.011 & 0.947 $\pm$ 0.004 & 1.00 & 1.00 & 1.00 \\
+\midrule
+Flow matching, NFE 10$^\dagger$ & 0.747 $\pm$ 0.002 & 0.911 $\pm$ 0.023 & 0.872 $\pm$ 0.081 & 1.00 & 1.00 & 1.00 \\
+Diffusion (DDIM)$^\dagger$ & 0.687 $\pm$ 0.042 & 0.896 $\pm$ 0.049 & 0.941 $\pm$ 0.034 & 1.00 & 1.00 & 1.00 \\
+Diffusion, NFE 10$^\dagger$ & 0.464 $\pm$ 0.157 & 0.602 $\pm$ 0.136 & 0.786 $\pm$ 0.217 & 1.00 & 1.00 & 1.00 \\
+\bottomrule
+\end{tabular}

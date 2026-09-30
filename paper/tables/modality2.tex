@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrr}
+\toprule
+Method & FD $\downarrow$ & Coverage $\uparrow$ & Density $\uparrow$ & FD@10 $\downarrow$ & Step viol. $\downarrow$ \\
+\midrule
+Reflection sampler~\citep{lou2023reflected} & 192.0 $\pm$ 143.5 & 0.624 & 0.478 & 540.3 & 0.1401 \\
+Mirror-map FM~\citep{liu2023mirror} & 52.5 $\pm$ 23.9 & 0.685 & 0.480 & 98.9 & 0.0000 \\
+Dyn.\ thresholding on $x_t$~\citep{saharia2022imagen} & 195.5 $\pm$ 150.3 & 0.623 & 0.480 & 540.8 & 0.1604 \\
+\midrule
+Flow matching (internal base) & 193.9 $\pm$ 145.6 & 0.623 & 0.478 & 545.3 & 0.1602 \\
+\textbf{Ours}: $v = x(1-x)\odot w$ & 151.0 $\pm$ 47.4 & 0.410 & 0.302 & 269.6 & 0.0000 \\
+\bottomrule
+\end{tabular}

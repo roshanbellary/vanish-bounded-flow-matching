@@ -1,0 +1,49 @@
+{
+  "run_id": "067d0eb46c4d",
+  "status": "ok",
+  "tier": "smoke",
+  "seed": 0,
+  "git": "526dd1a",
+  "config": {
+    "exp": "real_sequences",
+    "dataset": "dna_k4",
+    "k": 4,
+    "arm": "gumbel",
+    "lam": 0.0,
+    "tier": "smoke",
+    "steps": 40,
+    "n_train": 512,
+    "n_eval": 512,
+    "seeds": [
+      0
+    ],
+    "hidden": 64,
+    "layers": 4
+  },
+  "metrics": {
+    "10": {
+      "step_violation": 0.7923828125,
+      "x0_outside": 0.9703125,
+      "marginal_kl": 0.013714537435844505,
+      "kmer_r": 0.14357037877624512
+    },
+    "50": {
+      "step_violation": 0.7429296875,
+      "x0_outside": 0.9680859375,
+      "marginal_kl": 0.014360232866665868,
+      "kmer_r": -0.00962698966027821
+    },
+    "100": {
+      "step_violation": 0.733359375,
+      "x0_outside": 0.96884765625,
+      "marginal_kl": 0.01335401733154324,
+      "kmer_r": -0.011993856446261792
+    }
+  },
+  "wall_seconds": 6.4,
+  "gpu_hours": 0.0,
+  "host": "nic-08643.apn.wlan.private.upenn.edu",
+  "device": "mps",
+  "finished_at": "2026-09-21T16:28:11-0400",
+  "on_gpu": false
+}

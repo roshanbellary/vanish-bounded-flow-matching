@@ -1,0 +1,554 @@
+\documentclass{article}
+
+%% Official CIS 6270 Project 1 template (Project1_Paper_Instructions_DualFormat.tex), NeurIPS mode:
+%% 5-page main text; references and appendix do not count.
+\PassOptionsToPackage{numbers,compress}{natbib}
+\usepackage[final,main]{neurips_2026}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\hypersetup{hidelinks}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit,calc}
+
+% Every number in running text is a macro generated from results/ by scripts/make_tables.py.
+\input{tables/nums}
+
+% Tight float spacing: the main text must fit in five pages.
+\setlength{\textfloatsep}{8pt plus 2pt minus 2pt}
+\setlength{\floatsep}{6pt plus 2pt minus 2pt}
+\setlength{\intextsep}{6pt plus 2pt minus 2pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{0pt}
+
+\title{VANISH: Vanishing-Factor Ablation of\\ Non-tangent Flows in Simplex and Hypercube}
+
+\author{
+  Roshan Bellary,$^{1}$ Audhav Durai,$^{1}$ Chang-Uk Jeong,$^{1}$ Pedram Bayat$^{1}$\\
+  \\
+  $^{1}$Department of Computer and Information Science, University of Pennsylvania
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+On a bounded domain, nothing in the training objective of a continuous generative model makes the
+learned velocity field point back inside, and samplers silently clamp the difference away. We study
+human DNA, protein and trinucleotide sequences on the probability simplex (four to sixty-four
+symbols), scored on held-out sequences, and MNIST images in the unit box. Flow matching fits held-out
+marginals better than matched diffusion; reward guidance steers our model toward GC-rich DNA and
+hydrophobic protein, at a cost in diversity. The learned field leaves the simplex on \BaseViolPctDna\% of sampler steps with four
+symbols and on nearly all with sixty-four. Our innovation isolates the multiplicative factor of a known replicator
+parameterisation: alone, it removes violations at moderate step counts and improves the linear base
+at twenty and sixty-four symbols on every seed, while the centering term is inert. It does not reach
+Dirichlet or Fisher-Flow flow matching, which are feasible too. On images the factor again removes
+violations but not quality gaps; a mirror-map baseline is significantly better. Feasibility is cheap
+and every strong method has it; the factor alone buys a real but limited gain.
+\end{abstract}
+
+\section{Introduction}
+
+Diffusion models reverse a stochastic corruption \citep{karras2022edm}, flow matching regresses a
+vector field along a probability path \citep{lipman2022flow}, and interpolants unify the two
+\citep{albergo2023interpolants}; which suits a given state space is worth settling under one protocol.
+
+Many state spaces are \emph{bounded}: sequences relaxed onto the simplex
+\citep{stark2024dirichlet,davis2024fisher,tang2025gumbel} live in $\Delta_K$, images in $[0,1]^d$.
+The regression target is admissible, but the fitted field is unconstrained and need not point
+inward. Theory for confined flows assumes it does
+\citep{cont2026noflux}; practice repairs it by clamping, projection or thresholding
+\citep{stark2024dirichlet,saharia2022imagen}. Sample-level violations are known
+\citep{xie2024reflected}; how often the per-step repair fires on real data is not. The replicator parameterisation of Boll et al.~\citep{boll2024assignment}
+makes the field tangent by construction but bundles two mechanisms never separated in flow matching.
+
+On simplex sequences (Modality~1) and MNIST in a box (Modality~2) we compare flow matching with
+diffusion, demonstrate guidance, ablate the replicator form, and compare with recent methods. We
+hypothesised that a field vanishing on the boundary would generate better, and that the gain would
+transfer because it depends only on boundedness.
+
+Our contributions are summarized as follows.
+\begin{itemize}[leftmargin=1.2em,itemsep=0pt,topsep=2pt]
+  \item A matched comparison of flow matching and diffusion on three simplex datasets; flow matching
+        has lower held-out marginal KL on every dataset.
+  \item Reward guidance of the innovation model on real sequences, with its control--quality--diversity
+        trade-off quantified.
+  \item A measurement of how often learned fields leave the simplex on three alphabets, and a
+        one-at-a-time ablation isolating the replicator form's multiplicative factor.
+  \item A comparison with three recent simplex methods and a no-model unigram reference.
+  \item A transfer of the factor to $[0,1]^{784}$ against three boundary-handling baselines:
+        feasibility transfers, quality does not.
+\end{itemize}
+
+\section{Related Work}
+
+\textbf{Frameworks.} Flow matching, rectified flow and SiT \citep{lipman2022flow,liu2023rectified,ma2024sit}
+and EDM, DDIM and the cosine schedule \citep{karras2022edm,song2021ddim,nichol2021improved} frame our baselines.
+
+\textbf{Boundaries.} Reflected flow matching reports how often unconstrained flow matching leaves the
+simplex and the box \citep{xie2024reflected}; reflected and mirror diffusion enforce domains by
+reflection or a change of coordinates \citep{lou2023reflected,liu2023mirror,fishman2023constrained}.
+Boll et al.~\citep{boll2024assignment} parameterise flows with the replicator map
+$\mathrm{Diag}(p)-pp^\top$; Wang and Kanamori~\citep{wang2026conormal} use the same face-vanishing
+factors on simplices and boxes for reflected score learning; Cheng et al.~\citep{cheng2024statistical} note that such a field avoids overshooting, and
+PolyFlow separates fitting from integration error \citep{ma2026polyflow}. The
+parameterisation is prior art; ours is the test of the factor \emph{without} its centering, and the
+measurement on real data.
+
+\textbf{Modality 1.} Dirichlet flow matching follows Dirichlet paths \citep{stark2024dirichlet};
+Fisher-Flow follows Fisher--Rao geodesics on the sphere $\sqrt p$ \citep{davis2024fisher};
+Gumbel-Softmax flow matching anneals a relaxed categorical \citep{tang2025gumbel}. We re-implement
+all three on our backbone, optimiser and budget; each keeps its own path, objective and sampler
+(Dirichlet and Gumbel-Softmax train cross-entropy denoisers).
+
+\textbf{Modality 2.} Reflection \citep{lou2023reflected}, mirror maps \citep{liu2023mirror} and
+dynamic thresholding \citep{saharia2022imagen} are the standard ways to stay in $[0,1]^d$.
+
+\section{Methods}
+
+\begin{figure}[t]
+\centering
+\input{figures/overview}
+\caption{Study overview. Guidance acts on the frozen network; only the velocity parameterisation
+changes, and only the factor is carried to Modality~2. Nothing is pretrained.}
+\label{fig:overview}
+\end{figure}
+
+\subsection{Modalities, Data, and Preprocessing}
+\textbf{Modality 1} is unconditional generation of length-128 sequences, points of
+$\Delta_K^{128}$; data are one-hot vertices. \textbf{DNA} ($K=4$): 128-base windows of GRCh38
+chr1:1--10\,Mb \citep{ensembl2023}. \textbf{Codon} ($K=64$): the same region in 384-base windows
+read as non-overlapping trinucleotides (3-mer tokens, not reading-frame codons). \textbf{Protein}
+($K=20$): reviewed human SwissProt entries of length 128--1000 \citep{uniprot2023}, tiled into
+non-overlapping 128-residue windows. Held-out sets are split off by protein and by 100\,kb genomic
+block (the same blocks for DNA and codon), deduplicated; models train on \MOneTrain{} sequences
+and are scored against \MOneHeldout{} held-out ones.
+\textbf{Modality 2} is unconditional MNIST \citep{lecun1998mnist} generation in $[0,1]^{784}$,
+mapped inside by $x\mapsto0.98x+0.01$; we train on \MTwoTrain{} images and hold out the next
+\MTwoEval{} as the Fr\'echet reference. The simplex (a sum-constrained slice) and the box (a
+product of intervals) share only boundedness.
+
+\subsection{Continuous Flow Matching Baseline}
+With $x_1\sim p_{\text{data}}$ and $x_0\sim\mathrm{Dir}(\mathbf 1)$ per position,
+$x_t=(1-t)x_0+tx_1$, $u_t=x_1-x_0$, and
+$\mathcal L_{\text{FM}}(\theta)=\mathbb E_{t\sim\mathcal U[0,1]}\lVert v_\theta(x_t,t)-u_t\rVert_2^2$.
+The backbone is a dilated 1-D CNN (\MOneLayers{} residual blocks, width \MOneWidth,
+\MOneParamsLo--\MOneParamsHi{} parameters); Adam at a constant $10^{-3}$, batch \MOneBatch,
+\MOneSteps{} steps, final checkpoint, \MOneSeeds{} seeds. Sampling is Euler at NFE
+$\in\{10,50,100\}$, then clamping and renormalisation.
+
+\subsection{Diffusion Baseline}
+On the same coordinates, $x_s=\sqrt{\bar\alpha_s}x_1+\sqrt{1-\bar\alpha_s}\,\epsilon$ with the cosine
+schedule \citep{nichol2021improved},
+$\mathcal L_{\text{diff}}(\phi)=\mathbb E\lVert\epsilon-\epsilon_\phi(x_s,s)\rVert_2^2$, and
+deterministic DDIM \citep{song2021ddim},
+$x_{s'}=\sqrt{\bar\alpha_{s'}}\hat x_1+\sqrt{1-\bar\alpha_{s'}}\epsilon_\phi$ with
+$\hat x_1=(x_s-\sqrt{1-\bar\alpha_s}\epsilon_\phi)/\sqrt{\bar\alpha_s}$. All else matches 3.2.
+
+\subsection{Guided Generation}
+We steer the frozen innovation model (\S3.5) toward a sequence property with the reward
+$r(x)=\sum_l\log\sum_{i\in S}x_{l,i}$: GC content on DNA ($S=\{\mathrm{C},\mathrm{G}\}$) and
+hydrophobic fraction on protein ($S=\{\mathrm{A,I,L,M,F,V,W}\}$). The drift becomes
+$x\odot w_\theta+\gamma\nabla r$, $\gamma$ constant in $t$, and each Euler step is projected onto the
+simplex and renormalised (the Euclidean rule); nothing is retrained. A synthetic check with an
+exact guided law is in App.~\ref{app:guid}.
+
+\subsection{Proposed Innovation}
+\emph{Hypothesis:} the learned field points out of the simplex and the repairing clamp distorts
+samples, so a field vanishing on each face should generate better. The replicator form
+$v=x\odot(w-\langle x,w\rangle)$ \citep{boll2024assignment} combines two mechanisms: $x_i$ makes each
+component vanish on the face $x_i=0$, and the centering gives $\sum_iv_i=0$. We propose the factor
+alone,
+\begin{equation}
+v_\theta=x\odot w_\theta(x,t),\qquad
+\mathcal L(\theta)=\mathbb E\lVert x_t\odot w_\theta(x_t,t)-(x_1-x_0)\rVert_2^2,
+\end{equation}
+with no new parameters or hyperparameters; the sum constraint is left to renormalisation. Controls:
+the base $v=w$, center-only $v=w-\bar w$ ($\bar w$ the coordinate mean), and the full form (Algorithm~\ref{alg:train}).
+
+\subsection{Transfer to Modality 2}
+The invariant idea, a factor vanishing where the domain ends, becomes $v=x\odot(1-x)\odot w$ on the
+box (no sum constraint, so no centering). Only the backbone changes: a U-Net (width \MTwoWidth, \MTwoParams{} parameters), uniform source, Adam at
+$2\times10^{-4}$, batch 128, \MTwoSteps{} steps, \MTwoSeeds{} seeds, Euler at NFE
+$\in\{10,50,100\}$ with violations counted before clamping.
+
+\subsection{Model Overview}
+Figure~\ref{fig:overview} summarises what is trained, frozen and changed in each modality.
+
+\section{Results}
+
+\subsection{Evaluation Protocol}
+\subsubsection{Metrics}
+\emph{Step violation} is the fraction of (sample, step) pairs whose raw Euler update has any of its
+$128K$ coordinates below zero, before clamping, with no tolerance. It counts steps, not mass (App.~\ref{app:abl}),
+and rises with $K$ through the coordinate count alone, so we compare it within a dataset. Quality is per-position \emph{marginal KL} and \emph{3-mer correlation}
+\citep{wang2025drakes}, with a unigram sampler as a floor; diversity is checked post hoc (App.~\ref{app:div}). Modality~2 uses Fr\'echet distance (FD), density and coverage
+\citep{naeem2020reliable} in the features of one classifier trained once (\MTwoAcc\% test accuracy).
+\subsubsection{Fair Comparison and Computational Budget}
+Within an experiment all arms share data, architecture, optimiser, steps, seeds, sample count
+(\MOneEval{} sequences; \MTwoEval{} images) and NFE grid; each external method keeps its own path,
+objective and decoding (Dirichlet and Gumbel-Softmax train cross-entropy denoisers and decode the
+argmax of their final posterior, as published). Seeds fix initialisation, not minibatches across
+objectives. Runs used A40 and A6000 GPUs, about \MOneCellMin{} minutes per Modality~1 cell. All
+baselines are our re-implementations at our scale; none is quoted.
+\subsubsection{Statistical Reporting}
+Mean $\pm$ s.d.\ over seeds and paired-bootstrap 95\% intervals (20{,}000 resamples; significant
+if the interval excludes zero). At 8 seeds the bootstrap is optimistic, so headline effects also get
+Student-$t$ intervals and seed counts; there is no multiplicity correction. Registered before their
+runs: Table~\ref{tab:fmdiff_real}, the held-out data and split, the corrected baselines, the
+Modality~2 rerun and the guidance test; not registered: the decomposition, the 3-mer endpoint and the choice of datasets.
+
+\subsection{Modality 1: Flow Matching versus Diffusion}
+\emph{Which family should carry the innovation?} With the same backbone, flow matching attains
+lower held-out marginal KL at every NFE on every dataset, on at least \RealMinWins{} of \RealSeeds{}
+seeds (Table~\ref{tab:fmdiff_real}):
+\RealCIDna, \RealCIProt{} and \RealCICodon{} (diffusion minus flow matching, NFE 10), and the gap
+persists at NFE 100; the preregistered synthetic run agreed (Table~\ref{tab:fmdiff}). Diffusion
+was untuned, so we claim the ordering, not the margin; a unigram sampler reaches KL
+\UniKLDNA--\UniKLCodon{} on DNA and codon, so this metric mostly tests composition. Diffusion is
+also less diverse (Hamming \DiffHam{} vs.\ \FMHam; App.~\ref{app:div}).
+
+\begin{table}[t]
+\centering
+\caption{Flow matching vs.\ diffusion on the real sequences (\RealSeeds{} seeds): held-out marginal KL and
+paired differences, diffusion minus flow matching.}
+\label{tab:fmdiff_real}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/fmdiff_real}\end{adjustbox}
+\end{table}
+
+\begin{table}[t]
+\centering
+\begin{minipage}[t]{0.49\textwidth}\centering
+\caption{Guiding our model (\GRSeeds{} seeds). Hit: above the real 90th percentile;
+$r_{\text{top}}$: 3-mer $r$ to the real top decile. Full: Table~\ref{tab:guidance_real_full}.}
+\label{tab:guidance_real}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/guidance_real_compact}\end{adjustbox}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.49\textwidth}\centering
+\caption{Decomposition (\MOneSeeds{} seeds, NFE 100). Bold: significant vs.\ base, or violation
+$<10^{-3}$.}
+\label{tab:decomp}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/decomp}\end{adjustbox}
+\end{minipage}
+\end{table}
+
+\subsection{Modality 1: Guidance Works}
+\emph{Can the frozen model be steered toward a property?} Yes (Table~\ref{tab:guidance_real}). At the
+default $\gamma=0.3$ the hit rate rises by \GRHitCIDna{} on DNA and \GRHitCIProt{} on protein
+(paired vs.\ unguided), with no violations or extra runtime. The cost is diversity and realism:
+Hamming falls by \GRHamCIDna{} and \GRHamCIProt, and samples overshoot real high-property
+sequences; post hoc, similarity to the real top decile peaks at small strength ($\gamma=\GRBestGammaDna$
+on DNA: \GRKmerHiMidDna{} vs.\ \GRKmerHiZeroDna{} unguided).
+
+
+\subsection{Modality 1: Innovation Ablations}
+\emph{Which part of the replicator form matters?} The base field leaves the simplex on
+\BaseViolDna, \BaseViolProt{} and \BaseViolCodon{} of steps at $K=4,20,64$ (NFE 100;
+Fig.~\ref{fig:kscaling}; per coordinate it falls). In
+Table~\ref{tab:decomp} (Fig.~\ref{fig:decomp}) the factor alone improves 3-mer correlation by \MultCIProt{} at $K=20$
+and \MultCICodon{} at $K=64$ (\MultProtPos/\MultProtN{} and \MultCodonPos/\MultCodonN{} seeds; $t$-intervals agree); center-only
+is never significant (the base target already sums to zero), and dropping the full form's centering
+changes nothing (\DropCenterCICodon). Violations vanish at NFE $\ge50$; at NFE 10
+\MultViolTenLo--\MultViolTenHi\% remain, about one step in ten. At $K=20$ the gain shrinks with NFE (\MultMeanProtTen, \MultMeanProtFifty,
+\MultMeanProtHundred), as a clamping effect would; at $K=64$ it is not significant at NFE 10
+(\MultCICodonTen) and appears from NFE 50 (Fig.~\ref{fig:nfe}).
+
+
+\subsection{Modality 1: Comparison with Recent Methods}
+\emph{Is the method competitive?} No (Table~\ref{tab:baselines}, Fig.~\ref{fig:baselines}). At
+$K=4$ all are within noise; at $K=20,64$ Dirichlet flow matching leads us by \DirichletVsOursProt{}
+and \DirichletVsOursCodon, Fisher-Flow by \FisherVsOursProt{} and \FisherVsOursCodon; we beat
+Gumbel-Softmax only at $K=20$. All three are feasible in their own samplers (App.~\ref{app:base}). A
+no-model unigram sampler scores \UniProtein{} and \UniCodon{} at $K=20,64$: protein 3-mer correlation
+is nearly saturated by composition, and on codon ours (\OursKmerCodon) stays below the floor.
+
+\begin{table}[t]
+\centering
+\caption{Recent methods (our re-implementations), the base and a no-model reference
+(\MOneSeeds{} seeds, NFE 100). Violation is of each method's own update.}
+\label{tab:baselines}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/baselines}\end{adjustbox}
+\end{table}
+
+\subsection{Modality 2: Transfer of the Innovation}
+\emph{Does the factor help in a different state space?} Feasibility transfers (violation
+\MTwoViolOurs; Table~\ref{tab:m2}, Fig.~\ref{fig:m2fig}); quality does not. The paired FD change
+against the base is \MTwoClaim, so the preregistered claim fails; ours matches reflection and
+thresholding, which act as plain clamping \citep{lou2023reflected}, is significantly worse than
+mirror-map flow matching (\MTwoVsMirror), and loses coverage and density on all \MTwoSeeds{} seeds.
+Mirror also uses a different source (Gaussian in logit space).
+
+\begin{table}[t]
+\centering
+\caption{Transfer to MNIST (\MTwoSeeds{} seeds, NFE 100 unless noted). All arms are flow matching
+in our harness: reflection and thresholding are sampler rules; mirror trains in logit space.}
+\label{tab:m2}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/modality2}\end{adjustbox}
+\end{table}
+
+\subsection{Cross-Modality Analysis and Failure Modes}
+\emph{Does the mechanism help for the same reason in both spaces?} The factor removes violations in
+both, but feasibility does not separate methods: every strong one is feasible (by vanishing
+mixtures, a change of coordinates or our factor) yet quality differs widely. Failure modes: protein
+barely exceeds composition; on images coverage and density fall and samples are blotchier
+(Fig.~\ref{fig:m2samples}); at NFE 10 the last step overshoots; six interventions failed
+(Table~\ref{tab:interventions}). \emph{Answer:} the factor improves the linear base at $K\ge20$,
+trails recent methods, and transfers feasibility but not quality.
+
+\section{Discussion}
+The ablation shows causally that the factor, not the centering, is the active part; the baseline
+and transfer comparisons are correlational and go against us. The likeliest explanation of the gain
+is an inductive bias: multiplying by $x_i$ concentrates the field where mass already is, as the
+Dirichlet and Gumbel mixtures also do; its decay with NFE at $K=20$ suggests part is avoided clamping.
+
+Limitations: small models, re-implemented baselines, post-hoc diversity checks and a protein metric
+near its composition floor. Supported: a vanishing factor removes violation at NFE $\ge50$ and
+improves a linear flow at $K\ge20$; its centering is unnecessary; it trails recent methods.
+
+\bibliographystyle{ieeetr}
+\bibliography{refs}
+
+\newpage
+\appendix
+\renewcommand{\thetable}{S\arabic{table}}\setcounter{table}{0}
+\renewcommand{\thefigure}{S\arabic{figure}}\setcounter{figure}{0}
+\section{Appendix}
+Every table and figure here supports the main text: Table~\ref{tab:fmdiff} (\S4.2),
+Table~\ref{tab:guidance_full} (\S4.3), Figures~\ref{fig:kscaling}, \ref{fig:nfe} and~\ref{fig:decomp}
+(\S4.4), Figure~\ref{fig:baselines} (\S4.5), Figures~\ref{fig:m2fig} and~\ref{fig:m2samples}
+(\S4.6--4.7) and Table~\ref{tab:interventions} (\S4.7).
+
+\subsection{Dataset and Preprocessing Details}
+Built by \texttt{experiments/prepare\_real\_data\_v2.py}; array hashes are in
+\texttt{results/data\_v2\_manifest.json}. DNA and codon come from one region, GRCh38
+chr1:1{,}000{,}000--9{,}999{,}999 (Ensembl REST, upper-cased), cut into 128- and 384-base windows;
+windows containing \texttt{N} are dropped. 18 of 90 blocks of 100\,kb are held out, the same for
+both, and windows straddling a train/held-out boundary are dropped. Protein uses the 16{,}363
+reviewed human SwissProt entries of length 128--1000, tiled from the N-terminus into
+non-overlapping 128-residue windows (windows with non-standard residues dropped); 20\% of
+accessions are held out, so no protein contributes to both sides. Exact duplicates are removed
+within each side and held-out windows identical to a training window are removed. Pools are
+38{,}300/9{,}746 (protein), 56{,}236/13{,}709 (DNA) and 18{,}733/4{,}559 (codon) train/held-out
+windows, each permuted (seed 0) and truncated to \MOneTrain/\MOneHeldout. An earlier version kept only
+each protein's first 128 residues and split nothing; it is superseded. MNIST uses the standard
+60{,}000 training images.
+
+\subsection{Training and Sampling Details}
+Modality~1 CNN: kernel 5, dilation cycling $1,2,4,8,16$, GroupNorm, sinusoidal time features,
+zero-initialised output. Modality~2 U-Net: two downsampling stages (width \MTwoWidth{} and twice
+that), a mid block and symmetric upsampling with skip connections, GroupNorm, SiLU, sinusoidal
+time embedding per block. The mirror baseline trains flow matching on $y=\mathrm{logit}(x)/4$
+from a Gaussian source and maps back through the sigmoid, so its source differs from the other
+arms'. No run uses a learning-rate schedule, early stopping or checkpoint selection.
+
+\subsection{Additional Ablations}
+\label{app:abl}
+Table~\ref{tab:fmdiff} is the preregistered \S4.2 decision run. It deviated from our registration,
+which specified the dilated CNN and a real-data leg; the deviation is disclosed in the repository's
+preregistration log, and Table~\ref{tab:fmdiff_real} is the registered repair.
+Table~\ref{tab:interventions} lists the other constraint interventions we tried; with the
+Modality~2 transfer, six interventions were falsified, including a soft tangency penalty, a
+convex-combination integrator (a no-op under uniform steps) and a $(1-t)^2$ loss reweighting that
+was harmful against the base (\ReweightCIProt{} at $K=20$; the $t$-interval \ReweightProtT{}
+includes zero, \ReweightProtPos/\ReweightProtN{} seeds favour it).
+\textbf{Violation magnitude and step size.} On a synthetic $K=\SweepK$ model the base rate is flat
+(\SweepRateLo--\SweepRateHi) over a $\SweepRatio\times$ step-size range and the clamped mass is
+$\SweepMassLo$--$\SweepMassHi$ per step; on real DNA the rate rises from \BaseViolDnaTen{} at NFE 10.
+We did not measure clamped mass on real data.
+
+\begin{table}[h]
+\centering
+\caption{The preregistered \S4.2 decision run: synthetic categorical target, small MLP,
+\SynSeeds{} seeds. Marginal KL (lower better).}
+\label{tab:fmdiff}
+\resizebox{\textwidth}{!}{\input{tables/fmdiff}}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Constraint interventions (NFE 100): what each fixes and what it costs.}
+\label{tab:interventions}
+\small
+\input{tables/interventions}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig2_kscaling.pdf}
+\caption{Non-tangency of the base arm against alphabet size (Table~\ref{tab:decomp}, base rows).}
+\label{fig:kscaling}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig3_nfe.pdf}
+\caption{Gain over the base against NFE. Dashed: full replicator. Solid: multiplicative factor
+alone. At $K{=}20$ both gains shrink as steps shrink; at $K{=}64$ the factor's gain appears only
+from NFE 50.}
+\label{fig:nfe}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig4_decomposition.pdf}
+\caption{One-at-a-time removal of the two pieces of the replicator form (Table~\ref{tab:decomp}).}
+\label{fig:decomp}
+\end{figure}
+
+\subsection{Additional Baseline Results}
+\label{app:base}
+All baseline numbers are reproduced by our group; none is quoted from the original papers.
+\textbf{Corrections, each preregistered before its run.} (i) Our first Fisher-Flow sampler integrated
+its sphere velocity in simplex coordinates; the corrected arm steps on the sphere and maps back by
+$p=s^2$, so its own update is feasible by construction (as a Euclidean simplex velocity its field
+would exit on \FisherViolEuclid{} of steps; exponential-map steps can still leave the positive
+orthant of the sphere). (ii) Our first Dirichlet and Gumbel-Softmax arms regressed on velocity
+targets that were neither the published methods nor their own paths' velocities (Gumbel's was
+$18.4\times$ too small). They now train the published cross-entropy denoisers with the published
+conditional fields (the Dirichlet $C$-factor as in the authors' code) and decode, as published, the
+argmax of the final posterior. Neither path reaches a vertex, so decoding the final state instead
+gives lower scores at large $K$: 3-mer $r$ \GumbelKmerState{} (Gumbel) and \DirichletKmerState{}
+(Dirichlet). (iii) All Modality~1 numbers were first scored against the training sequences, on
+data that kept only protein N-termini; they are now scored on held-out rebuilt data. The
+train-minus-held-out 3-mer gap is small (\TrainGapBase{} base, \TrainGapOurs{} ours). (iv)
+Modality~2 first used one feature extractor per run; one shared extractor now scores every arm, and
+no verdict changed. (v) A guidance rule described as an entropic mirror step was the
+natural-gradient update, and a stale natural-gradient violation rate was replaced by a rerun.
+Superseded rows remain in the repository (e.g.\ training-reference 3-mer $r$ of the first
+implementations: Dirichlet \DirichletKmerOld, Gumbel \GumbelKmerOld, Fisher \FisherKmerOld).
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig5_baselines.pdf}
+\caption{Matched comparison with recent methods (Table~\ref{tab:baselines} in graphical form).}
+\label{fig:baselines}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figures/fig6_modality2.pdf}
+\caption{Modality~2 transfer (Table~\ref{tab:m2} in graphical form).}
+\label{fig:m2fig}
+\end{figure}
+
+\subsection{Guidance: Full Grid and Synthetic Check}
+\label{app:guid}
+Table~\ref{tab:guidance_real_full} gives every guidance strength on the real sequences. The
+synthetic check guides a base model on one position with $K=\GuidK$ toward the two rarest
+symbols, where the ideal guided law ($p_{\text{data}}$ restricted to $S$) is known exactly. Unguided,
+$S$ is hit with probability \GuidHitZero; every rule reaches \GuidHitMax{} by $\gamma=8$ with KL to the
+ideal law of \GuidKLLo--\GuidKLHi{} (Table~\ref{tab:guidance}; \GuidN{} samples). At $\gamma=8$ the
+tangent rule escapes with $\GuidMassRatio\times$ the Euclidean rule's mass, and the natural gradient
+cuts the violation rate from \GuidViolEuc{} to \GuidViolNat{} but needs $\GuidStrengthRatio\times$ the
+strength. At $\gamma=0$ the rate is already \GuidViolZero: the base field, not guidance, leaves the
+domain.
+
+\begin{table}[h]
+\centering
+\caption{Real-data guidance, full $\gamma$ grid (\GRSeeds{} seeds).}
+\label{tab:guidance_real_full}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/guidance_real_full}\end{adjustbox}
+\end{table}
+
+\begin{table}[h]
+\centering
+\caption{Synthetic guidance check, $K{=}\GuidK$ target (one seed). Full sweep:
+Table~\ref{tab:guidance_full}.}
+\label{tab:guidance}
+\footnotesize\input{tables/guidance}
+\end{table}
+
+\subsection{Additional Samples and Failure Cases}
+\label{app:div}
+\textbf{Diversity (exploratory, added after the results).} Marginal KL and 3-mer correlation cannot
+see a generator that repeats a few sequences, so from the saved NFE-100 samples (4{,}000 per cell)
+we measure the unique-sequence fraction and the mean pairwise normalised Hamming distance
+(Table~\ref{tab:diversity}); Hamming distance tracks composition, so the target is the held-out
+value, not the largest. Base, ours, the ablations, Dirichlet FM and Fisher-Flow match held-out
+data. The endpoint arms \emph{collapse}: on \EndpointCollapseProt{} of 8 protein and
+\EndpointCollapseCodon{} of 8 codon seeds (reweighted: \EndpointRwCollapseProt{} and
+\EndpointRwCollapseCodon) every sample is the same sequence, which is what their low, erratic
+3-mer scores reflect. Gumbel-Softmax FM decoded by its posterior is less diverse than the data
+(Hamming \GumbelHamProt{} vs \RealHamProt{} on protein, \GumbelHamCodon{} vs \RealHamCodon{} on
+codon); decoded by its state it matches (\GumbelStateHamProt). No arm reproduces a training sequence
+(largest exact-copy rate \MaxTrainCopy). For guidance, where the state is one symbol, the analogue is
+the split between the two target symbols: the ideal law puts \GuidRareIdeal\% of the target mass
+on the rarer one; at $\gamma=8$ the Euclidean and tangent rules put \GuidRareEuc\% and
+\GuidRareTan\% (under-dispersed), the natural gradient \GuidRareNat\% (over-dispersed). None collapses
+onto one symbol.
+
+\begin{table}[h]
+\centering
+\caption{Exploratory diversity, Modality~1 (8 seeds, 4{,}000 samples, NFE 100; mean $\pm$ s.d.).
+Denoiser baselines decoded by their posterior, as reported elsewhere. $^\dagger$A sample-saving rerun
+of the \S4.2 families; it reproduces the registered marginal KL exactly.}
+\label{tab:diversity}
+\footnotesize\begin{adjustbox}{max width=\textwidth}\input{tables/diversity}\end{adjustbox}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/fig7_m2_samples.pdf}
+\caption{Uncurated Modality~2 samples (the first eight drawn at NFE 100, seed \MTwoSampleSeed, saved before
+inspection). Our arm attains a lower FD than the base on this seed yet is visibly blotchier: FD in
+a small classifier's features is not a perceptual judgement.}
+\label{fig:m2samples}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{Full guidance sweep; Table~\ref{tab:guidance} reports the $\gamma\in\{1,8\}$ columns.}
+\label{tab:guidance_full}
+\small
+\input{tables/guidance_full}
+\end{table}
+
+\textbf{Commitment time.} The decoded $\arg\max$ of $x_t$ settles early: mean settling times are
+\CommitDna, \CommitProt{} and \CommitCodon{} for $K=4,20,64$, with
+\CommitSettledLo--\CommitSettledHi\% of positions settled by $t=0.25$. This is a different
+quantity from the posterior in St\"ark et al.~\citep[Prop.~1]{stark2024dirichlet}, which is an upper bound, and
+under a $\mathrm{Dir}(\mathbf 1)$ source much of it follows from the geometry of the linear path
+rather than from the model. We report it as descriptive only.
+
+\subsection{Algorithms}
+\label{app:alg}
+\begin{algorithm}[h]
+\caption{Training and sampling with the multiplicative factor ($\theta$ is the only trainable component)}
+\label{alg:train}
+\begin{algorithmic}[1]
+\For{$k=1,\dots,$ \MOneSteps}
+  \State sample $x_1\sim\mathcal D$ (one-hot), $x_0\sim\mathrm{Dir}(\mathbf 1)$ per position, $t\sim\mathcal U[0,1]$
+  \State $x_t\gets(1-t)x_0+tx_1$;\quad $v\gets x_t\odot w_\theta(x_t,t)$ \Comment{box: $x_t\odot(1-x_t)\odot w_\theta$}
+  \State $\theta\gets\theta-\eta\nabla_\theta\lVert v-(x_1-x_0)\rVert_2^2$
+\EndFor
+\State \textbf{Sample:} $x\sim\mathrm{Dir}(\mathbf 1)$; for $i=0,\dots,N-1$: $x\gets x+\tfrac1N\,x\odot w_\theta(x,\tfrac iN)$, clamp at $0$, renormalise
+\State \Return $\arg\max$ per position
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Implementation and Reproducibility Details}
+Every table, figure and in-text number is regenerated from the stored result files by
+\texttt{scripts/make\_tables.py} and \texttt{scripts/make\_figures.py}; the repository README maps
+each script to the tables it produces and gives setup, data preparation and run commands.
+PyTorch~2.8 with CUDA 12.8 on the rented GPUs and MPS locally; seeds $0$--$7$; the Gamma sampler
+used by the Dirichlet baseline was validated against \texttt{scipy} by Kolmogorov--Smirnov test
+($p=\GammaKSp$ at shapes \GammaShapes). Baselines are re-implemented from their papers; the
+Dirichlet $C$-factor follows the authors' reference code and matches it to $10^{-10}$.
+
+\end{document}

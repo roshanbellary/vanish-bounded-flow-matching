@@ -1,0 +1,52 @@
+{
+ "rule": ", identical in spirit for every dataset:\n  * PROTEIN (K=20): reviewed human SwissProt, length 128-1000 (as v1), each protein tiled into\n    non-overlapping 128-residue windows from its N-terminus; a window with any non-standard\n    residue is dropped. The split is BY PROTEIN: 20% of accessions (seeded) are held out, so no\n    protein contributes to both sides.\n  * DNA (K=4) and TRIPLET (K=64, file name kept as `codon_k64`): ONE contiguous region of GRCh38\n    chromosome 1 starting at 1,000,000. DNA tiles it into 128-base windows; the triplet set\n    tiles the same region into 384-base windows read as 128 non-overlapping trinucleotides.\n    These are 3-mer tokens of genomic DNA, NOT reading-frame codons. Windows containing N are\n    dropped. The split is BY GENOMIC BLOCK of 100 kb: 20% of blocks (seeded) are held out, and\n    the same blocks are held out for both tokenisations, so DNA and triplet differ only in\n    tokenisation and window length.\n  * Every dataset: exact duplicate windows are removed within each side, and any held-out window\n    identical to a training window is removed from the held-out side.",
+ "seed": 0,
+ "heldout_fraction": 0.2,
+ "length": 128,
+ "datasets": {
+  "protein_k20": {
+   "train_raw": 38574,
+   "train_dedup": 38300,
+   "heldout_raw": 9887,
+   "heldout_dedup": 9867,
+   "heldout_after_cross_removal": 9746,
+   "proteins": 16363,
+   "heldout_proteins": 3273,
+   "windows_nonstandard_dropped": 15,
+   "train_sha256": "8a1403e3a139ca07081863be88e046a0a5e658b08c1fcd9a4900f530af1b063b",
+   "heldout_sha256": "82c1594420bdb357e4a819e808a16da2bcae74c8a322a36b352732c797d9cf87"
+  },
+  "dna_k4": {
+   "train_raw": 56237,
+   "train_dedup": 56236,
+   "heldout_raw": 13709,
+   "heldout_dedup": 13709,
+   "heldout_after_cross_removal": 13709,
+   "region": "chr1:1000000-9999999",
+   "window_bases": 128,
+   "block_bases": 100000,
+   "blocks": 90,
+   "heldout_blocks": 18,
+   "windows_with_N_dropped": 341,
+   "windows_straddling_split_dropped": 25,
+   "train_sha256": "614cfe9283301a75defb690ec4065dd0558a5508284b5670764c1d97597a2086",
+   "heldout_sha256": "387b23a8b79a87ef3169acc5012cff717fef3fb5707a78d2073b7f5e9b684606"
+  },
+  "codon_k64": {
+   "train_raw": 18733,
+   "train_dedup": 18733,
+   "heldout_raw": 4559,
+   "heldout_dedup": 4559,
+   "heldout_after_cross_removal": 4559,
+   "region": "chr1:1000000-9999999",
+   "window_bases": 384,
+   "block_bases": 100000,
+   "blocks": 90,
+   "heldout_blocks": 18,
+   "windows_with_N_dropped": 114,
+   "windows_straddling_split_dropped": 31,
+   "train_sha256": "a2684a61ec12fde4a68f8eb4ab5089c22b27b11178daedc9fd5d745287a209bb",
+   "heldout_sha256": "98f8b2adcd2c1e23e673289531ad20d6e73e92f9a6a2cb3f181530f08cba9938"
+  }
+ }
+}

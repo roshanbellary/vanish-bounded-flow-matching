@@ -1,0 +1,51 @@
+{
+  "run_id": "670ac64e521a",
+  "status": "ok",
+  "tier": "full",
+  "seed": 0,
+  "git": "eb61e8c",
+  "config": {
+    "exp": "real_sequences",
+    "dataset": "codon_k64",
+    "k": 64,
+    "arm": "unconstrained",
+    "lam": 0.0,
+    "tier": "full",
+    "steps": 8000,
+    "n_train": 16351,
+    "n_eval": 4000,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "hidden": 128,
+    "layers": 8
+  },
+  "metrics": {
+    "10": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 1.0810996174138032,
+      "kmer_r": -0.0030430481806287438
+    },
+    "50": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.1677671773113224,
+      "kmer_r": 0.022082861022581637
+    },
+    "100": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.12232177192011348,
+      "kmer_r": 0.06731109936549914
+    }
+  },
+  "wall_seconds": 959.1,
+  "gpu_hours": 0.0,
+  "host": "nic-08643.apn.wlan.private.upenn.edu",
+  "device": "mps",
+  "finished_at": "2026-09-21T13:12:47-0400",
+  "on_gpu": false
+}

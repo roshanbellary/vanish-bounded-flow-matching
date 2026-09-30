@@ -1,0 +1,61 @@
+{
+  "run_id": "b0044b2d3136",
+  "status": "ok",
+  "tier": "smoke",
+  "seed": 0,
+  "git": "793f9a3+dirty",
+  "config": {
+    "exp": "real_sequences",
+    "dataset": "protein_k20",
+    "k": 20,
+    "arm": "unconstrained",
+    "lam": 0.0,
+    "tier": "smoke",
+    "steps": 40,
+    "n_train": 512,
+    "n_eval": 512,
+    "seeds": [
+      0
+    ],
+    "hidden": 64,
+    "layers": 4
+  },
+  "metrics": {
+    "5": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.1642926614266869,
+      "kmer_r": 0.7132632032480127
+    },
+    "10": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.19084617377776175,
+      "kmer_r": 0.7159209737551943
+    },
+    "20": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.2136114607505193,
+      "kmer_r": 0.7001531810799259
+    },
+    "50": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.2340432320673701,
+      "kmer_r": 0.7015032858246463
+    },
+    "100": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.23345855758461714,
+      "kmer_r": 0.7103455282600748
+    }
+  },
+  "wall_seconds": 2.9,
+  "gpu_hours": 0.0,
+  "host": "MacBook-Pro-727.local",
+  "device": "mps",
+  "finished_at": "2026-09-21T02:04:20-0400",
+  "on_gpu": false
+}

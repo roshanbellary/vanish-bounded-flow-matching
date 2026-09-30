@@ -1,0 +1,61 @@
+{
+  "run_id": "fb83dd4ec935",
+  "status": "ok",
+  "tier": "smoke",
+  "seed": 0,
+  "git": "793f9a3+dirty",
+  "config": {
+    "exp": "real_sequences",
+    "dataset": "dna_k4",
+    "k": 4,
+    "arm": "unconstrained",
+    "lam": 0.0,
+    "tier": "smoke",
+    "steps": 40,
+    "n_train": 512,
+    "n_eval": 512,
+    "seeds": [
+      0
+    ],
+    "hidden": 64,
+    "layers": 4
+  },
+  "metrics": {
+    "5": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.015549494109481584,
+      "kmer_r": 0.521278373833718
+    },
+    "10": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.017976853172362993,
+      "kmer_r": 0.4989776529831915
+    },
+    "20": {
+      "step_violation": 1.0,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.018599023518967896,
+      "kmer_r": 0.45766209498671095
+    },
+    "50": {
+      "step_violation": 0.99953125,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.011864040793474126,
+      "kmer_r": 0.6255398559496754
+    },
+    "100": {
+      "step_violation": 0.99865234375,
+      "x0_outside": 1.0,
+      "marginal_kl": 0.01343231270574695,
+      "kmer_r": 0.614797039978573
+    }
+  },
+  "wall_seconds": 7.7,
+  "gpu_hours": 0.0,
+  "host": "MacBook-Pro-727.local",
+  "device": "mps",
+  "finished_at": "2026-09-21T02:04:12-0400",
+  "on_gpu": false
+}

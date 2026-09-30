@@ -1,0 +1,1 @@
+{"arm":"hard_convex","dataset":"codon_k64","exp":"real_sequences","hidden":64,"k":64,"lam":0.0,"layers":4,"n_eval":512,"n_train":512,"seeds":[0],"steps":40,"tier":"smoke"}

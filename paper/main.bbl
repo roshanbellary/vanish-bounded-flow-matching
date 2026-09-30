@@ -1,0 +1,140 @@
+\begin{thebibliography}{10}
+
+\bibitem{karras2022edm}
+T.~Karras, M.~Aittala, T.~Aila, and S.~Laine, ``Elucidating the design space of
+  diffusion-based generative models,'' in {\em Advances in Neural Information
+  Processing Systems}, vol.~35, pp.~26565--26577, 2022.
+
+\bibitem{lipman2022flow}
+Y.~Lipman, R.~T.~Q. Chen, H.~Ben-Hamu, M.~Nickel, and M.~Le, ``Flow matching
+  for generative modeling,'' in {\em International Conference on Learning
+  Representations (ICLR)}, 2023.
+
+\bibitem{albergo2023interpolants}
+M.~S. Albergo, N.~M. Boffi, and E.~Vanden-Eijnden, ``Stochastic interpolants: A
+  unifying framework for flows and diffusions,'' {\em Journal of Machine
+  Learning Research}, vol.~26, no.~209, pp.~1--80, 2025.
+
+\bibitem{stark2024dirichlet}
+H.~Stark, B.~Jing, C.~Wang, G.~Corso, B.~Berger, R.~Barzilay, and T.~Jaakkola,
+  ``Dirichlet flow matching with applications to {DNA} sequence design,'' in
+  {\em International Conference on Machine Learning}, 2024.
+\newblock arXiv:2402.05841.
+
+\bibitem{davis2024fisher}
+O.~Davis, S.~Kessler, M.~Petrache, {\.I}.~{\.I}. Ceylan, M.~Bronstein, and
+  A.~J. Bose, ``Fisher flow matching for generative modeling over discrete
+  data,'' in {\em Advances in Neural Information Processing Systems}, vol.~37,
+  pp.~139054--139084, 2024.
+\newblock arXiv:2405.14664.
+
+\bibitem{tang2025gumbel}
+S.~Tang, Y.~Zhang, A.~Tong, and P.~Chatterjee, ``Gumbel-softmax flow matching
+  with straight-through guidance for controllable biological sequence
+  generation,'' {\em arXiv preprint arXiv:2503.17361}, 2025.
+
+\bibitem{cont2026noflux}
+R.~Cont, ``Reflected diffusions, no-flux continuity equations and confined
+  lagrangian flows in bounded domains,'' {\em arXiv preprint arXiv:2607.28344},
+  2026.
+
+\bibitem{saharia2022imagen}
+C.~Saharia, W.~Chan, S.~Saxena, L.~Li, J.~Whang, E.~Denton, {\em et~al.},
+  ``Photorealistic text-to-image diffusion models with deep language
+  understanding,'' {\em Advances in Neural Information Processing Systems},
+  vol.~35, 2022.
+\newblock arXiv:2205.11487.
+
+\bibitem{xie2024reflected}
+T.~Xie, Y.~Zhu, L.~Yu, T.~Yang, Z.~Cheng, S.~Zhang, X.~Zhang, and C.~Zhang,
+  ``Reflected flow matching,'' in {\em International Conference on Machine
+  Learning (ICML)}, 2024.
+\newblock arXiv:2405.16577.
+
+\bibitem{boll2024assignment}
+B.~Boll, D.~Gonzalez-Alvarado, S.~Petra, and C.~Schn{\"o}rr, ``Generative
+  assignment flows for representing and learning joint distributions of
+  discrete data,'' {\em arXiv preprint arXiv:2406.04527}, 2024.
+\newblock Revised January 2025.
+
+\bibitem{liu2023rectified}
+X.~Liu, C.~Gong, and Q.~Liu, ``Flow straight and fast: Learning to generate and
+  transfer data with rectified flow,'' in {\em International Conference on
+  Learning Representations (ICLR)}, 2023.
+
+\bibitem{ma2024sit}
+N.~Ma, M.~Goldstein, M.~S. Albergo, N.~M. Boffi, E.~Vanden-Eijnden, and S.~Xie,
+  ``{SiT}: Exploring flow and diffusion-based generative models with scalable
+  interpolant transformers,'' in {\em European Conference on Computer Vision
+  (ECCV)}, 2024.
+
+\bibitem{song2021ddim}
+J.~Song, C.~Meng, and S.~Ermon, ``Denoising diffusion implicit models,'' in
+  {\em International Conference on Learning Representations}, 2021.
+
+\bibitem{nichol2021improved}
+A.~Q. Nichol and P.~Dhariwal, ``Improved denoising diffusion probabilistic
+  models,'' in {\em International Conference on Machine Learning},
+  pp.~8162--8171, 2021.
+
+\bibitem{lou2023reflected}
+A.~Lou and S.~Ermon, ``Reflected diffusion models,'' in {\em International
+  Conference on Machine Learning}, 2023.
+\newblock arXiv:2304.04740.
+
+\bibitem{liu2023mirror}
+G.-H. Liu, T.~Chen, E.~A. Theodorou, and M.~Tao, ``Mirror diffusion models for
+  constrained and watermarked generation,'' in {\em Advances in Neural
+  Information Processing Systems}, 2023.
+\newblock arXiv:2310.01236.
+
+\bibitem{fishman2023constrained}
+N.~Fishman, L.~Klarner, V.~De~Bortoli, E.~Mathieu, and M.~Hutchinson,
+  ``Diffusion models for constrained domains,'' {\em Transactions on Machine
+  Learning Research}, 2023.
+\newblock arXiv:2304.05364.
+
+\bibitem{wang2026conormal}
+Z.~Wang and T.~Kanamori, ``Should the boundary term be learned in reflected
+  diffusion? {C}onormal trace and reflection masking,'' {\em arXiv preprint
+  arXiv:2608.03469}, 2026.
+
+\bibitem{cheng2024statistical}
+C.~Cheng, J.~Li, J.~Peng, and G.~Liu, ``Categorical flow matching on
+  statistical manifolds,'' in {\em Advances in Neural Information Processing
+  Systems}, 2024.
+\newblock arXiv:2405.16441.
+
+\bibitem{ma2026polyflow}
+J.~Ma, Q.~Yang, Y.~Zhang, L.~Yan, Z.~Cao, Y.~Zhang, and Y.~Gao, ``{PolyFlow}:
+  Safe and efficient polytope-constrained flow matching with constraint
+  embedding and projection-free update,'' in {\em International Conference on
+  Machine Learning}, 2026.
+\newblock arXiv:2606.13400.
+
+\bibitem{ensembl2023}
+F.~J. Martin, M.~R. Amode, A.~Aneja, {\em et~al.}, ``Ensembl 2023,'' {\em
+  Nucleic Acids Research}, vol.~51, no.~D1, pp.~D933--D941, 2023.
+
+\bibitem{uniprot2023}
+{The UniProt Consortium}, ``{UniProt}: the universal protein knowledgebase in
+  2023,'' {\em Nucleic Acids Research}, vol.~51, no.~D1, pp.~D523--D531, 2023.
+
+\bibitem{lecun1998mnist}
+Y.~LeCun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
+  applied to document recognition,'' {\em Proceedings of the IEEE}, vol.~86,
+  no.~11, pp.~2278--2324, 1998.
+
+\bibitem{wang2025drakes}
+C.~Wang, M.~Uehara, Y.~He, A.~Wang, T.~Biancalani, A.~Lal, T.~Jaakkola,
+  S.~Levine, H.~Wang, and A.~Regev, ``Fine-tuning discrete diffusion models via
+  reward optimization with applications to {DNA} and protein design,'' in {\em
+  International Conference on Learning Representations}, 2025.
+\newblock arXiv:2410.13643.
+
+\bibitem{naeem2020reliable}
+M.~F. Naeem, S.~J. Oh, Y.~Uh, Y.~Choi, and J.~Yoo, ``Reliable fidelity and
+  diversity metrics for generative models,'' in {\em International Conference
+  on Machine Learning}, pp.~7176--7185, 2020.
+
+\end{thebibliography}

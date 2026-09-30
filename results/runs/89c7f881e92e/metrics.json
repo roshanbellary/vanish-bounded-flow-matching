@@ -1,0 +1,49 @@
+{
+  "run_id": "89c7f881e92e",
+  "status": "ok",
+  "tier": "smoke",
+  "seed": 0,
+  "git": "56d93b9+dirty",
+  "config": {
+    "exp": "real_sequences",
+    "dataset": "dna_k4",
+    "k": 4,
+    "arm": "endpoint_convex",
+    "lam": 0.0,
+    "tier": "smoke",
+    "steps": 40,
+    "n_train": 512,
+    "n_eval": 512,
+    "seeds": [
+      0
+    ],
+    "hidden": 64,
+    "layers": 4
+  },
+  "metrics": {
+    "10": {
+      "step_violation": 0.0,
+      "x0_outside": 0.0,
+      "marginal_kl": 1.8265919418901082,
+      "kmer_r": 0.319525584277208
+    },
+    "50": {
+      "step_violation": 0.0,
+      "x0_outside": 0.0,
+      "marginal_kl": 0.9510496376562683,
+      "kmer_r": 0.4803031435869491
+    },
+    "100": {
+      "step_violation": 0.0,
+      "x0_outside": 0.0,
+      "marginal_kl": 0.8202831020725974,
+      "kmer_r": 0.44010281174262134
+    }
+  },
+  "wall_seconds": 120.6,
+  "gpu_hours": 0.0,
+  "host": "nic-08643.apn.wlan.private.upenn.edu",
+  "device": "mps",
+  "finished_at": "2026-09-21T14:34:31-0400",
+  "on_gpu": false
+}

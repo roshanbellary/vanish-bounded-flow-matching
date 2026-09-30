@@ -1,0 +1,1 @@
+{"arm":"unconstrained","dataset":"dna_k4","exp":"real_sequences","hidden":128,"k":4,"lam":0.0,"layers":8,"n_eval":4000,"n_train":16351,"seeds":[0,1,2],"steps":8000,"tier":"full"}

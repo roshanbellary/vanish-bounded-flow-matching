@@ -1,0 +1,32 @@
+% Study overview (Figure 1 of the paper, slide 1f of the deck). Shared by both, so they
+% cannot drift apart. Needs tikz with positioning, arrows.meta and fit.
+\begin{tikzpicture}[font=\scriptsize, >=Stealth,
+  box/.style={draw, rounded corners=1.5pt, align=center, inner sep=2pt, minimum height=6.5mm},
+  train/.style={box, draw=blue!70!black, fill=blue!6},
+  frozen/.style={box, draw=gray, dashed, fill=gray!8},
+  key/.style={box, draw=orange!80!black, fill=orange!14, line width=0.8pt}]
+  % (a) Modality 1
+  \node[box]    (src) at (0,0)      {source\\$\mathrm{Dir}(\mathbf 1)$ on $\Delta_K^{128}$};
+  \node[train]  (fm)  at (2.35,0.5) {linear FM\\$u=x_1-x_0$};
+  \node[train]  (df)  at (2.35,-0.5){VP diffusion\\$\epsilon$-pred., DDIM};
+  \node[box]    (sel) at (4.45,0)   {selected:\\FM (\S4.2)};
+  \node[key]    (inn) at (6.55,0)   {$v=x\odot w$\\(centering dropped)};
+  \node[frozen] (gd)  at (4.45,-1.15){guidance $+\gamma G\nabla r$\\frozen net, sampling};
+  \draw[->] (src) -- (fm); \draw[->] (src) -- (df);
+  \draw[->] (fm) -- (sel); \draw[->] (df) -- (sel); \draw[->] (sel) -- (inn);
+  \draw[->, dashed, gray] (gd) -- (sel);
+  \node[draw=gray!60, fit=(src)(fm)(df)(sel)(inn)(gd), inner sep=3pt] (pa) {};
+  \node[anchor=south west, font=\scriptsize\bfseries, inner sep=1pt] at (pa.north west) {(a) Modality 1: sequences on the simplex};
+  % (b) Modality 2
+  \node[box]    (s2) at (8.95,0.5)   {source $\mathcal U[0,1]^{784}$};
+  \node[train]  (un) at (11.35,0.5)  {U-Net $w_\theta$\\(modality-specific)};
+  \node[key]    (i2) at (11.35,-0.5) {$v=x\odot(1-x)\odot w$\\(reused factor)};
+  \node[box]    (cp) at (8.75,-0.5)  {vs.\ 3 baselines\\(\S4.6)};
+  \draw[->] (s2) -- (un); \draw[->] (un) -- (i2); \draw[->] (i2) -- (cp);
+  \node[draw=gray!60, fit=(s2)(un)(i2)(cp)(gd.south -| cp.west), inner sep=3pt] (pb) {};
+  \node[anchor=south west, font=\scriptsize\bfseries, inner sep=1pt] at (pb.north west) {(b) Modality 2: images in the box};
+  % legend
+  \node[train, minimum height=3.5mm]  (l1) at (8.35,-1.2) {trainable};
+  \node[frozen, minimum height=3.5mm, right=1.5mm of l1] (l2) {frozen};
+  \node[key, minimum height=3.5mm, right=1.5mm of l2] (l3) {innovation};
+\end{tikzpicture}

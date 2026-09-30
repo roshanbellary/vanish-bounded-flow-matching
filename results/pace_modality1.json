@@ -1,0 +1,6686 @@
+{
+  "nfes": [
+    2,
+    5,
+    10,
+    20,
+    50,
+    100
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "runs": [
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.06160227209329605
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.057056259363889694
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0267216544598341
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.024222707375884056
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.013603100553154945
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.013769902288913727
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.14163821935653687
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.05042886734008789
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.030744019895792007
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.016405202448368073
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.017539512366056442
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.01218380220234394
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.09705452620983124
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.04673004150390625
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.04074285551905632
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.02882397547364235
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.02195814624428749
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.017297793179750443
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.08918078988790512
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.07544910907745361
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.04584117233753204
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.023325037211179733
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.03143656253814697
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.02470913901925087
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.06513668596744537
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.035093773156404495
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.017092812806367874
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.015597991645336151
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.010924098081886768
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.010232090950012207
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.026262633502483368
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.04906458407640457
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.02906426228582859
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.016713105142116547
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.01335705816745758
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.009856468066573143
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.0920155718922615
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.020476575940847397
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.013293277472257614
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.009174739941954613
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.006708310917019844
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.005280973389744759
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.06900323927402496
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.025338228791952133
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.01755683496594429
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.010915659368038177
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.007840534672141075
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.00665690004825592
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.07238413393497467
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.03596276044845581
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.021514415740966797
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.010394422337412834
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.007580282166600227
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.005633065477013588
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.00448993593454361
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.04355376586318016
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.029445074498653412
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.015359234064817429
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.00813549105077982
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.005193084478378296
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.027851082384586334
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.03168608248233795
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.008538015186786652
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.00445582065731287
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0038845185190439224
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.004539353772997856
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.011431615799665451
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.006770752370357513
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.015677273273468018
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.006128499284386635
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.004980271682143211
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.003724159672856331
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.005553849041461945
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.02577081322669983
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.017105495557188988
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.01743171736598015
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.01631315052509308
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.018228115513920784
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.09417185187339783
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.003095508087426424
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.007667503319680691
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.010762009769678116
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.012653701938688755
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.01295891497284174
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.03918580710887909
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.005684673320502043
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.002570110373198986
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.0035091470927000046
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.0024312473833560944
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.002513352781534195
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.028577422723174095
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.01834772527217865
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.006762257777154446
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.008578803390264511
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.003900507465004921
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.00456986203789711
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.09058696776628494
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.022920653223991394
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.018366657197475433
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.014017730951309204
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.015557073056697845
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.013115372508764267
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.044138409197330475
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.056527331471443176
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.0280735045671463
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.020972635596990585
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.015384990721940994
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.013506069779396057
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.017285116016864777
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.004412306472659111
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.004124821163713932
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.0058326562866568565
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.006150597706437111
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.006685521453619003
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.03387484699487686
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.0028068087995052338
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.00903681106865406
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.009622802957892418
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.005536595359444618
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.006665220484137535
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.02858538180589676
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.0338430292904377
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.02218284085392952
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.014170907437801361
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.013833783566951752
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.013231832534074783
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.01947646215558052
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.04256736859679222
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.025936976075172424
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.015666093677282333
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.013222601264715195
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.01576746627688408
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.09430092573165894
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.03967725858092308
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.03087388165295124
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.014427350834012032
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.0072264885529875755
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.006411765236407518
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.012070395052433014
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.05267467722296715
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.02512759156525135
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.013496411964297295
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.008819928392767906
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.007082554046064615
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.07977761328220367
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.026441849768161774
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.014837121590971947
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.013769453391432762
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.005843597464263439
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.006008495111018419
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.0026416685432195663
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.04964881017804146
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.024076584726572037
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.013439469039440155
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.007997315376996994
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.005818153731524944
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.12119291722774506
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.03249692916870117
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.01898384280502796
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.013198727741837502
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.012051543220877647
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.008196872659027576
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.18977561593055725
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.029501959681510925
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.020093221217393875
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.01600760966539383
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.00995507650077343
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.008830804377794266
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.08956670761108398
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.03496336564421654
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.03108067810535431
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.026149366050958633
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.0210401713848114
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.01841641589999199
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.14597919583320618
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.03707146272063255
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.03370628133416176
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.02358103170990944
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.02091144397854805
+    },
+    {
+      "path": "linear",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.018248703330755234
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 1.1897406578063965
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.2621369957923889
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.14267194271087646
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0932270959019661
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.05986315384507179
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.06286570429801941
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.23059096932411194
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.14313457906246185
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.07552246004343033
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.07039559632539749
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.06530101597309113
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.061612166464328766
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 1.1636279821395874
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.43333813548088074
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.13689231872558594
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.09387589991092682
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.08135931938886642
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.07802875339984894
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.6333049535751343
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.11914786696434021
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.07892875373363495
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.074927918612957
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.07107900083065033
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.07021225988864899
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 1.641392469406128
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.501300036907196
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.20972812175750732
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.08093017339706421
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.04953232407569885
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.05078011751174927
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.6765899062156677
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.21794651448726654
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.08631618320941925
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.05805240571498871
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.05422504246234894
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.04950255528092384
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 1.2427103519439697
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.38488706946372986
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.09965070337057114
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.051547616720199585
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.06170526519417763
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.050782762467861176
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.2824712097644806
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.08707578480243683
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.04598823934793472
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.04339414834976196
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.04859226197004318
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.04753229767084122
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 1.644637107849121
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.718397855758667
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.1924576461315155
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.08499635756015778
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.05892854928970337
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.0470404177904129
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 1.0499355792999268
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.1921049803495407
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.06558802723884583
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.05294198915362358
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.046924889087677
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.045885004103183746
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 1.0764788389205933
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.9546971321105957
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.5353530049324036
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.42212769389152527
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.44888120889663696
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.44752001762390137
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.894982099533081
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.3813815116882324
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.42834940552711487
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.39159610867500305
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.4065706133842468
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.4113175868988037
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 4.048569202423096
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 2.844088077545166
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 1.549849271774292
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 1.196157455444336
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.8620042204856873
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.856526792049408
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 2.804938554763794
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 1.194270133972168
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.9024471044540405
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.8599073886871338
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.8959048986434937
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.884819746017456
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 3.7473978996276855
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 2.0654397010803223
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 1.391585350036621
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 1.160327672958374
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.9862939119338989
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.9280050992965698
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 1.539472222328186
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 1.1773709058761597
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.8816590309143066
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.8847629427909851
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.9272764921188354
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.8964602947235107
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.9798051714897156
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.8592742681503296
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.3836475610733032
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.2598344385623932
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.25636494159698486
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.24140837788581848
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.8362979888916016
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.3279445469379425
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.2745482921600342
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.24174432456493378
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.23268669843673706
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.23744244873523712
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 5.859002113342285
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 3.089637279510498
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 1.107993245124817
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.8053532242774963
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.7233351469039917
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.7234262228012085
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 4.26495885848999
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.9368955492973328
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.9185266494750977
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.8022099733352661
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.75755774974823
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.7093034386634827
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 1.3542695045471191
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.2672716975212097
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.06550982594490051
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.04969102516770363
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0446162149310112
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.04269988089799881
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.3764812648296356
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.11423709988594055
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.05893438681960106
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0569930225610733
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.047225471585989
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.05005984753370285
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 2.6976609230041504
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 1.5269118547439575
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.4929618835449219
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.17321202158927917
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.1103837788105011
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.09469675272703171
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 1.1582629680633545
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.4117993116378784
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.16146068274974823
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.11526012420654297
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.09500667452812195
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.08367025852203369
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 1.4503836631774902
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.8215732574462891
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.3035304844379425
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.13166169822216034
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.10371291637420654
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.08884477615356445
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.6943365335464478
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.23453783988952637
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.12346754968166351
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.08714447915554047
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.07508423924446106
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.06898199021816254
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 1.7083367109298706
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.33165621757507324
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.10360242426395416
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.05637245252728462
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.05312245339155197
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.0418144091963768
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.375117689371109
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.10747954249382019
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.05428382754325867
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.04624738544225693
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.044378384947776794
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.042090024799108505
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 1.7573124170303345
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 1.4867790937423706
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.32560110092163086
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.10293187201023102
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.0745655819773674
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.06789999455213547
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 1.683866262435913
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.3746870160102844
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.12847213447093964
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.0830484926700592
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.0738477036356926
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.06306782364845276
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.09100256860256195
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.006745010614395142
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0026621464639902115
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0008581697475165129
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0006552552804350853
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.000797029584646225
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.038597412407398224
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.0051279254257678986
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0015703840181231499
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0012566586956381798
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.00121672498062253
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.001091991551220417
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.13374339044094086
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.006155937910079956
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.003340158611536026
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.00042934250086545944
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.0002662413753569126
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.00023478548973798752
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.09488581120967865
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.01714351773262024
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.0066295526921749115
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.0010328199714422226
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.00014656735584139824
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.0002271425910294056
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.3242044746875763
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.0025636348873376846
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.0029969457536935806
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.001774357631802559
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.0015581240877509117
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.002540402114391327
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.07808856666088104
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.0009212304721586406
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.0006449786014854908
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.0013003658968955278
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.003607194870710373
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.002684812992811203
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.16979628801345825
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.03945855051279068
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.01586361601948738
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.006964977830648422
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.0068320631980896
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.004605574533343315
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.12191535532474518
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.026770010590553284
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.01469583809375763
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.006582949310541153
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.004699770361185074
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.004704676568508148
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.10584511607885361
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.0032650604844093323
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.003942858427762985
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.002772366628050804
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.004988227039575577
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.003405427560210228
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.05220106244087219
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.002582941669970751
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.003080666996538639
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.0032570287585258484
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.0015966985374689102
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.0018906556069850922
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.0011176979169249535
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.0012226197868585587
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0030256062746047974
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0018991995602846146
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0012324806302785873
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.0023239925503730774
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.0021535116247832775
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.003817148506641388
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.003120170906186104
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0029614102095365524
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.002883622422814369
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.003042282536625862
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.014825254678726196
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.00532502681016922
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.002265220507979393
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.009470812976360321
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.007754366844892502
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.008294031023979187
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.00791870802640915
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.003019660711288452
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.005218535661697388
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.004656564444303513
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.006254810839891434
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.007782891392707825
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.03045395016670227
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.006062772125005722
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.0027519091963768005
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.0035641714930534363
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.005971502512693405
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.006373114883899689
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.006951022893190384
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.001680135726928711
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.00045565422624349594
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.0012533366680145264
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.003911957144737244
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.003967389464378357
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.40122169256210327
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.11906561255455017
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.03770691156387329
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.005887508392333984
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.004196649417281151
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.0039507560431957245
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.2696413993835449
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.07412505149841309
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.030082635581493378
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.006869222968816757
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.005323763936758041
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.003481591120362282
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.05173860490322113
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.02594871073961258
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.0018949909135699272
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.001733939629048109
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.002141580916941166
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.0026377197355031967
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.06181565672159195
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.003821498481556773
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.0017380118370056152
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.0035977214574813843
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.0030938219279050827
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.0033706650137901306
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.15002982318401337
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.002167724072933197
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0011899955570697784
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0014115143567323685
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0017816629260778427
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.002050330862402916
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.055057257413864136
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.0031418087892234325
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0029309485107660294
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.001080784946680069
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0032004695385694504
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.002598229795694351
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.09263037145137787
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.0005825376138091087
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.0006452230736613274
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.001925785094499588
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.002937251701951027
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.002393057569861412
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.024926260113716125
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.0023624002933502197
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.0013959091156721115
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.0011407043784856796
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.0015624966472387314
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.001744123175740242
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.09080324321985245
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.005088772624731064
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.00419475045055151
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.0021532634273171425
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.0023354273289442062
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.0017200484871864319
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.03752388060092926
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.0037103956565260887
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.004095455631613731
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.005309905856847763
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.0023863650858402252
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.002726146951317787
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.17027737200260162
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.027669735252857208
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.012299977242946625
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.005787800997495651
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.005951911211013794
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.004291921854019165
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.06933990120887756
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.006930738687515259
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.0036437511444091797
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.004066610708832741
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.004262685775756836
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.004094205796718597
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.04681830853223801
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.0005446150898933411
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.0025725997984409332
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.004616070538759232
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.006446152925491333
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.006307385861873627
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.004639884456992149
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.0016494933515787125
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.004710007458925247
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.005404867231845856
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.004755791276693344
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.005555339157581329
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.30347588658332825
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.06407056748867035
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.059292279183864594
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.08469688892364502
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.09441425651311874
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.09892536699771881
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.24496561288833618
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.07142208516597748
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.0552898645401001
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.08115169405937195
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.08943934738636017
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.09776768833398819
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.3644488751888275
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.04414445906877518
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.05735906586050987
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.0707407295703888
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.08528315275907516
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.09468774497509003
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.25969645380973816
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.04163996875286102
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.053656790405511856
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.07305586338043213
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.08047932386398315
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.08906412124633789
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.3269548714160919
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.07400558143854141
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.06097953021526337
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.08343950659036636
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.1004248633980751
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.1070922315120697
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.3435521125793457
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.05516311898827553
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.05688267946243286
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.06792696565389633
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.09900205582380295
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.10763213038444519
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.2159767746925354
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.06295254826545715
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.08297280967235565
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.11275866627693176
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.1218990758061409
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.12512530386447906
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.23924383521080017
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.05619318038225174
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.07254526019096375
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.09621888399124146
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.11684785038232803
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.12249672412872314
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.21666648983955383
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.07207754999399185
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.08683276176452637
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.07562221586704254
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.09235748648643494
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.09207107126712799
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.2638305425643921
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.054326146841049194
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.047339245676994324
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.06979700922966003
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.08453412353992462
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "uniform",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.09149990975856781
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.8217790126800537
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.28720802068710327
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.19711743295192719
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.17423585057258606
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.1439473032951355
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.13195565342903137
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.4150552749633789
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.239481583237648
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.1849537193775177
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.1727380007505417
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.1536073386669159
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.1413480043411255
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 2.073237895965576
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.4583843946456909
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.2579156160354614
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.22452284395694733
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.18047305941581726
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.18826884031295776
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.8026876449584961
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.31962937116622925
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.22598785161972046
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.1950693428516388
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.18398912250995636
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.18659108877182007
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.8069190979003906
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.41108742356300354
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.3377337157726288
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.34102222323417664
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.36014673113822937
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.34493353962898254
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.5941567420959473
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.3574090301990509
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.3179968595504761
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.32085317373275757
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.3263637125492096
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.32568636536598206
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.3050840497016907
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.1508047729730606
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.10839232802391052
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.1000337228178978
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.10427867621183395
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.0957740843296051
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.29595768451690674
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.10841211676597595
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.09011071920394897
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.10324528068304062
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.09898176789283752
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.10035739094018936
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 1.3702049255371094
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.9731950163841248
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.8142765760421753
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.7298682332038879
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.6411467790603638
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.6423999071121216
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.9729812145233154
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.8466224670410156
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.7788903117179871
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.6862103939056396
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.5979124307632446
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "logitnormal",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.6299805641174316
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.30815112590789795
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.0701918751001358
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.05480207875370979
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.0696508064866066
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.0850701779127121
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.08769702166318893
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 2,
+      "kl": 0.26653650403022766
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 5,
+      "kl": 0.051374346017837524
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 10,
+      "kl": 0.045065511018037796
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 20,
+      "kl": 0.06287609040737152
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 50,
+      "kl": 0.08455632627010345
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 0,
+      "nfe": 100,
+      "kl": 0.08956927061080933
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.26805442571640015
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.0705311968922615
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.0720600113272667
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.08929049968719482
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.11119386553764343
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.11260455846786499
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 2,
+      "kl": 0.27040109038352966
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 5,
+      "kl": 0.048034537583589554
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 10,
+      "kl": 0.05128220096230507
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 20,
+      "kl": 0.07879523187875748
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 50,
+      "kl": 0.09959268569946289
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 1,
+      "nfe": 100,
+      "kl": 0.10911951959133148
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.48937198519706726
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.08122563362121582
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.05172630399465561
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.07554317265748978
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.08998128771781921
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.10350564867258072
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 2,
+      "kl": 0.38700658082962036
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 5,
+      "kl": 0.03860105201601982
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 10,
+      "kl": 0.05141884833574295
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 20,
+      "kl": 0.07709860801696777
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 50,
+      "kl": 0.09562092274427414
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 2,
+      "nfe": 100,
+      "kl": 0.10673938691616058
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.2781687378883362
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.06497564911842346
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.05157008767127991
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.0786343365907669
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.089617058634758
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.0918889194726944
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 2,
+      "kl": 0.2599320411682129
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 5,
+      "kl": 0.05124201998114586
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 10,
+      "kl": 0.0564294196665287
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 20,
+      "kl": 0.07392013072967529
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 50,
+      "kl": 0.09814204275608063
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 3,
+      "nfe": 100,
+      "kl": 0.10012950003147125
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.2056909203529358
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.051608532667160034
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.06839176267385483
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.07659949362277985
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.08752549439668655
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "uniform",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.08940480649471283
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 2,
+      "kl": 0.20597907900810242
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 5,
+      "kl": 0.039926473051309586
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 10,
+      "kl": 0.050758808851242065
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 20,
+      "kl": 0.06908337026834488
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 50,
+      "kl": 0.0816938728094101
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "density": "matched",
+      "grid": "matched",
+      "seed": 4,
+      "nfe": 100,
+      "kl": 0.08374422788619995
+    }
+  ],
+  "pilots": [
+    {
+      "path": "linear",
+      "k": 4,
+      "accel_profile": [
+        4.4674627265625,
+        5.986896617187501,
+        7.6342351640625,
+        8.05163475,
+        7.980079750000001,
+        7.764984734375,
+        7.6619303125,
+        7.637549609375,
+        7.8111934375,
+        7.928783890625,
+        8.122540625,
+        8.11794609375,
+        8.135841468750002,
+        7.994712203125001,
+        7.624167750000001,
+        7.3315919687500015,
+        7.048707187500001,
+        6.64678815625,
+        6.4638550156250005,
+        6.440664515625,
+        6.112517109375,
+        6.152934203125,
+        6.2641790156249995,
+        6.561282,
+        6.842988171875001,
+        7.132222484374999,
+        7.3318678281250005,
+        7.523066046875,
+        8.0253293125,
+        8.584150734375001,
+        9.397733109375,
+        10.397620765625,
+        12.005342015625,
+        13.796737421875001,
+        15.78723046875,
+        18.20924303125,
+        21.525978281249998,
+        24.033134562500003,
+        20.220651625000002,
+        16.190155875
+      ]
+    },
+    {
+      "path": "linear",
+      "k": 60,
+      "accel_profile": [
+        14.267428171875,
+        19.877541796875,
+        24.833230046875002,
+        26.838308250000004,
+        24.54438375,
+        20.785603500000004,
+        17.68416321875,
+        15.19196459375,
+        13.56393403125,
+        12.21817078125,
+        11.47770353125,
+        10.78183821875,
+        10.174236437500001,
+        9.668526,
+        9.14410428125,
+        8.660195250000001,
+        8.257942359375,
+        7.849984781250001,
+        7.544742093750001,
+        7.2170519375,
+        6.946354062500001,
+        6.679014234375,
+        6.43630909375,
+        6.230554687500001,
+        6.025080468750001,
+        5.845324578125,
+        5.737923937500001,
+        5.623083921875001,
+        5.53449125,
+        5.453974125,
+        5.44426765625,
+        5.425727921875,
+        5.443113078125,
+        5.488026671875,
+        5.538562296875001,
+        5.654155703125,
+        5.82114790625,
+        6.054621750000001,
+        4.945166421875,
+        3.718046390625
+      ]
+    },
+    {
+      "path": "geodesic",
+      "k": 4,
+      "accel_profile": [
+        3.0380473203125002,
+        4.265810164062501,
+        6.852969289062501,
+        8.045857328125,
+        9.273197687500002,
+        10.029986859375,
+        10.707508921875,
+        11.158406234375,
+        11.771226640625,
+        11.894116171875002,
+        12.253677390625,
+        12.531135171875,
+        12.525986296875,
+        12.067209421875003,
+        11.503548328125,
+        11.001425093749999,
+        10.058941906250002,
+        8.561395296875,
+        7.799035093750001,
+        7.228656000000001,
+        6.730760906250001,
+        6.424381375000001,
+        5.691047257812501,
+        5.3710669140625,
+        4.6790938671875,
+        4.4221425390625,
+        4.222097515625,
+        4.2045377109375,
+        4.081626460937501,
+        4.009408875,
+        3.8322049375000002,
+        3.8588288984375003,
+        4.0030704453125,
+        4.658117757812501,
+        4.999779609375,
+        5.410904109375,
+        5.987675703125,
+        7.8063397109375,
+        6.312690632812501,
+        5.2734715703125
+      ]
+    },
+    {
+      "path": "geodesic",
+      "k": 60,
+      "accel_profile": [
+        7.692944855468751,
+        13.92803960546875,
+        22.649677730468753,
+        29.2533435625,
+        34.088758125000005,
+        36.55066375,
+        35.511868875,
+        31.576341375000002,
+        27.3743624375,
+        23.639759500000004,
+        20.474178718750004,
+        17.95883503125,
+        15.8251484375,
+        14.1336983125,
+        12.96294303125,
+        12.0225170625,
+        11.252143749999998,
+        10.62246359375,
+        10.117799125000001,
+        9.64054184375,
+        9.3616835,
+        9.03936734375,
+        8.868422875,
+        8.627706031250002,
+        8.55296840625,
+        8.51536978125,
+        8.71706775,
+        8.9053149375,
+        9.089224562500002,
+        9.52495728125,
+        9.9392026875,
+        10.610938125,
+        11.491639656250001,
+        12.2781629375,
+        13.38114834375,
+        14.745308468750002,
+        16.62942346875,
+        19.14278196875,
+        16.4757345625,
+        13.3318395625
+      ]
+    }
+  ],
+  "wall_seconds": 5063.4
+}

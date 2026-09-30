@@ -1,0 +1,62 @@
+# Heavy artifacts: this tree lives inside Dropbox, so weights and datasets must never
+# be committed or they will also be synced.
+data/
+*.pt
+*.ckpt
+results/runs/*/ckpt*
+results/runs/*/samples/
+results/logs/
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# The ledger itself IS committed: it is the provenance of every table in the paper.
+!results/ledger.jsonl
+
+# Real sequence data fetched from public APIs; regenerate with
+# python experiments/prepare_real_data.py
+data/*.npy
+data/*.fasta
+
+# Run logs are transient; the ledger and results JSON are the record.
+results/*.log
+
+# LaTeX build intermediates (the PDF and .bbl are kept, the rest regenerate)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+slides/*.aux
+slides/*.log
+slides/*.out
+slides/*.nav
+slides/*.snm
+slides/*.toc
+
+# Secrets and credentials — nothing of the sort is used by this project (RunPod is driven
+# through an MCP server, not a checked-in key), but these are here so it stays that way.
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+.env
+.env.*
+*secret*
+*credential*
+*token*
+.netrc
+.npmrc
+id_rsa*
+id_ed25519*
+
+# The untagged Modality 2 sample grids are ambiguous about which seed they hold; the
+# seed-tagged ones supersede them.
+results/samples_*[!0-9].npy
+
+# Decoded Modality 1 samples (~100 MB): kept locally for re-scoring, not committed.
+results/m1_samples/
+results/*.pt
+results/checkpoints/

@@ -1,0 +1,12 @@
+\begin{tabular}{lrrrrrr}
+\toprule
+& \multicolumn{3}{c}{3-mer $r$} & \multicolumn{3}{c}{step violation} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Arm & $K{=}4$ & $K{=}20$ & $K{=}64$ & $K{=}4$ & $K{=}20$ & $K{=}64$ \\
+\midrule
+base $w$ & 0.894 & 0.753 & 0.127 & 0.713 & 0.967 & 1.000 \\
+mult $x \odot w$ & 0.899 & \textbf{0.865} & \textbf{0.196} & \textbf{0.0000} & \textbf{0.0000} & \textbf{0.0000} \\
+center $w - \bar{w}$ & 0.910 & 0.777 & 0.120 & 0.721 & 0.967 & 1.000 \\
+full replicator & 0.896 & \textbf{0.836} & \textbf{0.187} & 0.010 & 0.010 & 0.016 \\
+\bottomrule
+\end{tabular}
